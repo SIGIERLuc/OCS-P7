@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/starrr.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Restaurant aux alentours</title>
+</head>
+
+<body>
+    <section>
+        <div class="row all-page noPadding">
+            <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 noPadding">
+                <div class="top-content">
+                    <h1>Restaurant</h1>
+                    <hr>
+                    <p>Nombre d'étoiles mini <input class="starFilter" type="number" id="ratingFilterMin" name="ratingFilterMin" value="0"
+                            min="0" max="5"></p>
+                    <p>Nombre d'étoiles maxi <input class="starFilter" type="number" id="ratingFilterMax" name="ratingFilterMax" value="5"
+                            min="0" max="5"></p>
+                </div>
+                <div id="list">
+                    
+                </div>
+            </div>
+            <div class="col-4 col-sm-6 col-md-8 col-lg-9 col-xl-10 noPadding">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../library/underscore-min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="../library/starrr.js"></script>
+    <script src="../script/object.js"></script>
+    <script src="../script/script-1.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvAcN31KO1DCVk-F4aKMOuwEyy1dT-jpY&libraries=places&callback=initMap"
+    async defer></script>
+</body>
+
+</html>

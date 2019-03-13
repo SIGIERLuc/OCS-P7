@@ -1,0 +1,8 @@
+.starrr {
+  display: inline-block; }
+  .starrr a,.starrr a:hover, .starrr a:focus{
+    font-size: 16px;
+    padding: 0 1px;
+    cursor: default;
+    color: #FFD119!important;
+    text-decoration: none; }

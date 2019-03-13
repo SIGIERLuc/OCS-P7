@@ -1,0 +1,148 @@
+/* GENERAL CSS START */
+
+#map, .all-page {
+  height: 100vh;
+}
+
+#list {
+  height: 83vh;
+}
+
+.top-content {
+  height: 17vh;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.test-margin {
+  width: 70%;
+}
+
+.starFilter {
+  width: 20%
+}
+
+/* GENERAL CSS END */
+
+/* RESTAURANT DISPLAY START */
+
+.push, .top-content {
+  padding-left: 10px;
+}
+
+hr {
+  margin-left: -10px;
+}
+
+.previewImg {
+  width: 100px;
+  height: 100px;
+  margin-left: 1px;
+}
+
+.noPadding {
+  padding: 0px!important;
+  margin: 0px!important;
+}
+
+.reviewList {
+  height: 150px;
+}
+
+#list, .reviewList {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.noComment {
+  font-size: 1.3rem;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESTAURANT DISPLAY END */
+
+/* BTN CSS */
+
+.custom-btn {
+  margin-top: 2%;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #b5b817!important;
+  border-color: #b5b817!important;
+  margin: 5px 5px 0px 1px;
+}
+
+/* BTN CSS */
+
+/* HIGHLIGHTS START */
+
+.highlight {
+  background-color: rgba(85, 91, 92, 0.1);
+  /* border: solid 2px #b5b817; */
+}
+
+/* HIGHLIGHTS END */
+
+/* FORMULAIRE START */
+
+#review-form, #restaurant-form, .no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+fieldset input, fieldset textarea, fieldset label {
+  width: 100%;
+  margin: 5px;
+}
+
+.validateTips {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+#restaurant-form, #review-form {
+  overflow-x: hidden;
+}
+
+/* FORMULAIRE END */
+
+/* STACK OVERFLOW CSS FOR LOADING SCREEN */
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+
+.modal {
+  display: none;
+  /* position:   fixed; */
+  z-index: 1000;
+  height: auto;
+  width: 16%;
+  background: rgba( 255, 255, 255, 0.8) url('../img/loading.gif') 50% 50% no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+
+body.loading .modal {
+  overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+
+body.loading .modal {
+  display: block;
+}
+
+/* STACK OVERFLOW CSS FOR LOADING SCREEN */
